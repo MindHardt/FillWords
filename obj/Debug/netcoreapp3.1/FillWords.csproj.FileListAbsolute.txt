@@ -1,0 +1,13 @@
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.exe
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.deps.json
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.runtimeconfig.json
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.runtimeconfig.dev.json
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.dll
+C:\Users\igorb\source\repos\FillWords\FillWords\bin\Debug\netcoreapp3.1\FillWords.pdb
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.csprojAssemblyReference.cache
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.AssemblyInfoInputs.cache
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.AssemblyInfo.cs
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.csproj.CoreCompileInputs.cache
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.dll
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.pdb
+C:\Users\igorb\source\repos\FillWords\FillWords\obj\Debug\netcoreapp3.1\FillWords.genruntimeconfig.cache
