@@ -22,11 +22,11 @@ namespace FillWords
                 switch (activeScreen)
                 {
                     case 1:
-                        Scroll(CK, MainMenu1);
+                        MainMenu1.Scroll(CK, MainMenu1);
                         if (CK == ConsoleKey.Enter) ExecuteButtonAction(MainMenu1);
                         break;
                     case 2:
-                        Scroll(CK, NewGameMenu1);
+                        NewGameMenu1.Scroll(CK, NewGameMenu1);
                         if (CK == ConsoleKey.Enter) ExecuteButtonAction(NewGameMenu1);
                         break;
                     default: break;
@@ -51,40 +51,43 @@ namespace FillWords
 
             }
         }
-        static void Scroll(ConsoleKey CK, Screen Screen)
-        {
-            if ((CK == ConsoleKey.W | CK == ConsoleKey.UpArrow) & Screen.selectedRow > 1               ) Screen.selectedRow -= 1;
-            if ((CK == ConsoleKey.S | CK == ConsoleKey.DownArrow) & Screen.selectedRow < Screen.maxRow ) Screen.selectedRow += 1;
-        }
         static void ExecuteButtonAction(Screen Screen)
         {
             if (Screen.ID == 1)
             {
-                if (Screen.selectedRow == 1)
+                switch (Screen.selectedRow)
                 {
-                    Console.Clear();
-                    activeScreen = 2;
+                    case 1:
+                        Console.Clear();
+                        activeScreen = 2;
+                        break;
+                    case 2:
+                        Console.WriteLine("ЗДЕСЬ СКОРО ЧТО-ТО БУДЕТ!");
+                        break;
+                    case 3:
+                        Console.WriteLine("ЗДЕСЬ СКОРО ЧТО-ТО БУДЕТ!");
+                        break;
+                    case 4:
+                        Environment.Exit(0);
+                        break;
                 }
-                if (Screen.selectedRow == 2)
-                {
-                    Console.WriteLine("ЗДЕСЬ СКОРО ЧТО-ТО БУДЕТ!");
-                }
-                if (Screen.selectedRow == 3)
-                {
-                    Console.WriteLine("ЗДЕСЬ СКОРО ЧТО-ТО БУДЕТ!");
-                }
-                if (Screen.selectedRow == 4) Environment.Exit(0);
             }
             if (Screen.ID == 2)
             {
-                if (Screen.selectedRow == 1)
+                switch (Screen.selectedRow)
                 {
-                    Console.WriteLine("ЗДЕСЬ СКОРО ЧТО-ТО БУДЕТ!");
-                }
-                if (Screen.selectedRow == 2)
-                {
-                    Console.Clear();
-                    activeScreen = 1;
+                    case 1:
+                        Console.SetCursorPosition(59, 3);
+                        Console.Write(">> ");
+                        Console.CursorVisible = true;
+                        string name = Console.ReadLine();
+                        Console.CursorVisible = false;
+                        Environment.Exit(0);
+                        break;
+                    case 2:
+                        Console.Clear();
+                        activeScreen = 1;
+                        break;
                 }
             }
 

@@ -28,6 +28,11 @@ namespace FillWordsData
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.White;
         }
+        public void Scroll(ConsoleKey CK, Screen Screen)
+        {
+            if ((CK == ConsoleKey.W | CK == ConsoleKey.UpArrow) & Screen.selectedRow > 1) Screen.selectedRow -= 1;
+            if ((CK == ConsoleKey.S | CK == ConsoleKey.DownArrow) & Screen.selectedRow < Screen.maxRow) Screen.selectedRow += 1;
+        }
     }
     public class MainMenuScreen : Screen
     {
