@@ -30,8 +30,16 @@ namespace FillWordsData
         }
         public void Scroll(ConsoleKey CK, Screen Screen)
         {
-            if ((CK == ConsoleKey.W | CK == ConsoleKey.UpArrow) & Screen.selectedRow > 1) Screen.selectedRow -= 1;
-            if ((CK == ConsoleKey.S | CK == ConsoleKey.DownArrow) & Screen.selectedRow < Screen.maxRow) Screen.selectedRow += 1;
+            if ((CK == ConsoleKey.W | CK == ConsoleKey.UpArrow) & Screen.selectedRow > 1)
+            {
+                Screen.selectedRow -= 1;
+                Console.Beep(150,250);
+            }
+            if ((CK == ConsoleKey.S | CK == ConsoleKey.DownArrow) & Screen.selectedRow < Screen.maxRow)
+            {
+                Screen.selectedRow += 1;
+                Console.Beep(150,250);
+            }
         }
     }
     public class MainMenuScreen : Screen

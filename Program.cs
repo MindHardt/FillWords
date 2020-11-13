@@ -53,6 +53,7 @@ namespace FillWords
         }
         static void ExecuteButtonAction(Screen Screen)
         {
+            Console.Beep(250, 250);
             if (Screen.ID == 1)
             {
                 switch (Screen.selectedRow)
